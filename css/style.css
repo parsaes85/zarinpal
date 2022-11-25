@@ -1,0 +1,234 @@
+.line-h-1{
+    line-height: 45px;
+}
+.line-h-2{
+    line-height: 37px;
+}
+@font-face {
+    font-family: yekan;
+    src: url(../font/iranyekanwebbold.ttf);
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: yekan;
+    direction: rtl;
+    word-spacing: -4px;
+}
+.website{
+    margin: 10px auto;
+    overflow-x: hidden;
+    position: relative;
+}
+.navbar{
+    position: fixed;
+    top: 0px;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.815);
+    transition: .4s padding;
+    z-index: 999;
+}
+.nav-link{
+    font-size: .8em;
+    color: #303030;
+    margin: 0px 5px;
+}
+.navbar-button{
+    background-color: #f1f5fe;
+    color: #2e4589;
+    font-size: .8em;
+    padding: 11px 23px;
+}
+.navbar-button:hover{
+    background-color: #fbf7d9;
+}
+.line1, .line2, .line3{
+    background-color: #273c6e;
+    width: 23px;
+    height: 3px;
+    margin: 5px;
+    transition: all .4s;
+}
+.change-toggler .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.change-toggler .line2{
+    opacity: 0;
+}
+.change-toggler .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+.zarinpal-info-section{
+    background: linear-gradient(hsl(229, 44%, 24%),hsl(229, 44%, 36%));
+    margin: 90px 0px 160px;
+}
+.zarinpal-info-header{
+    font-size: 28px;
+}
+.signin-button{
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.btn-sm{
+    padding: 6px 12px;
+}
+.dropdown-item{
+    font-size: .8em;
+    color: #303030;
+    margin: 10px 0px;
+}
+.payment-section{
+    margin: 120px 0px;
+}
+.payment-section p{
+    text-align: justify;
+}
+.section-btn{
+    background-color: #f1f5fe;
+    color: #2e4589;
+    padding-left: 33px;
+    position: relative;
+}
+.bx-left-arrow-alt{
+    position: absolute;
+    top: 7px;
+    left: 10px;
+}
+.section-paragh{
+    font-size: .9em;
+}
+.bx-badge-check, .bxs-direction-left, .bx-support{
+    background-color: #f1f5fe;
+    color: #2e4589;
+    padding: 8px 13px;
+}
+.payment-property{
+    width: 50%;
+}
+.footer-header{
+    background-color: #fbf6f1;
+}
+.footer-btn{
+    cursor: pointer;
+}
+footer li a{
+    text-decoration: none;
+    color: #555;
+}
+footer li a i{
+    color: #2e4589;
+    background-color: #f1f5fe;
+    padding: 7px;
+    font-size: 28px;
+    border-radius: 10px;
+}
+.footer-copyright{
+    margin-bottom: -120px;
+}
+/* responsive */
+@media (min-width: 1199px) {
+    .website{
+        width: 1160px;
+    }
+    .navbar{
+        width: 1160px;
+        padding: 23px 0px 20px 23px;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .website{
+        width: 940px;
+    }
+    .navbar{
+        width: 940px;
+        padding: 23px 0px 20px 23px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .website{
+        padding: 0px 30px;
+    }
+    .navbar{
+        width: 100%;
+        left: 0px;
+        padding: 23px 30px 20px 50px;
+    }
+    .payment-section{
+        margin: 40px 0px;
+    }
+    footer h5{
+        font-size: 1.05em;
+    }
+}
+@media (max-width: 768px) {
+    .website{
+        padding: 0px 10px;
+    }
+    .navbar{
+        width: 100%;
+        left: 0px;
+        padding:10px 10px 10px 0px;
+        border-bottom: 1px solid rgb(214, 214, 214);
+    }
+    .payment-section{
+        margin: 40px 0px;
+    }
+    footer h5{
+        font-size: 1.05em;
+    }
+    .footer-header{
+        background-color: transparent;
+    }
+    .footer-btn{
+        background-color: #fbf6f1;
+        padding: 12px 20px;
+        border-radius: 50px;
+        width: fit-content;
+    }
+}
+@media (max-width: 576px) {
+    .zarinpal-info-header{
+        font-size: 19px;
+    }
+    .payment-property{
+        width: 100%;
+    }
+    .zarinpal-family h3{
+        font-size: 1.1em;
+    }
+    .zarinpal-family h5{
+        font-size: .9em;
+    }
+    footer{
+        border-top: 1px solid #dee2e6;
+    }
+    footer li a, footer h5{
+        font-size: .8em;
+    }
+    footer li a i{
+        font-size: 18px;
+    }
+}
+/* end of responsive */
+.navbar-scroll{
+    border-bottom: 1px solid rgb(214, 214, 214);
+    padding: 10px 0px 10px 23px;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 10px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
